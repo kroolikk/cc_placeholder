@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>College City</title>
+  <meta name="description" content="Zapis do newslettera">
+
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Sans+Caption:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag "main.css" %>
+  <%= javascript_include_tag "jquery.js" %>
+  <%= javascript_include_tag "blur.js" %>
+  <%= javascript_include_tag "init.js" %>
+  <%= javascript_include_tag "masonry.js" %> 
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=208374365888731";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  <% if flash[:notice] %>
+    <div class="response" id="mce-success-response"><%= flash[:notice] %></div>
+  <% end %>
+  <% if flash[:alert] %>
+    <div class="response" id="mce-error-response"><%= flash[:alert] %></div>
+  <% end %>
+
+
+  <header>
+    <div class="navigation-area">
+      <%= link_to "", root_url, :class => "logo-cc" %>
+    </div>
+    <div class="clear"></div>
+  </header>
+  
+  <div class="behind-bg">
+    <div class="blurme"><div class="stripes"></div></div>
+  </div>
+  
+  <div class="glass-wrapper">
+    <div class="main-content">
+      <div class="newsletter">
+        <p class="big-title">Witamy w CollegeCity</p>
+        <span class="small-title">Zapisz się do CollegeCity, aby zostać poinformowanym o starcie serwisu!<br>
+          Pierwsze osoby, które się zapiszą otrzymają ekskluzywne zaproszenie do beta testów.</span>
+          <div class="input-area">
+            <%= form_tag subscribe_url do %>
+              <label class="email-label">Twój e-mail:</label>
+              <%= text_field_tag :email, '', :class => "email-here", :placeholder => "e-mail" %>
+              <%= submit_tag "Zapisz się", :class => "email-me" %>
+            <% end %>
+          </div>
+
+          <div class="clearspace"></div>
+          <span class="small-title">... a w międzyczasie polub nas na facebooku!<br><br></span>     
+          <a href="https://www.facebook.com/CollegeCity" class="fb-link" target="_blank">CollegeCity na facebooku</a>
+
+          <div class="fb-like" data-href="https://www.facebook.com/CollegeCity" data-send="false" data-layout="button_count" data-width="150" data-show-faces="false" data-font="tahoma"></div>
+          <div class="clearspace"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="clearspace"></div>
+    
+  </body>
