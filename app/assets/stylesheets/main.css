@@ -45,16 +45,19 @@ body {
 }
 .behind-bg img {
   width: 100%;
+  min-width: 1028px;
   max-height: 225px;
   overflow: hidden;
 }
 .stripes {
 	width: 100%;
+	min-width: 1028px;
 	height: 225px;
 	background: url(/assets/stripes.png);
 }
 .blurme {
 	width: 100%;
+	min-width: 1028px;
 	height: 225px;
 	background-size: 100%;
 	background-position: center center;
