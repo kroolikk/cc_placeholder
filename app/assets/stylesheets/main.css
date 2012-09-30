@@ -251,7 +251,7 @@ footer li:hover {
 	margin-bottom: 10px;
 }
 .input-area {
-	width: 600px;
+	width: 555px;
 	margin: 30px auto;
 }
 .newsletter .email-here{
@@ -287,4 +287,19 @@ footer li:hover {
 	margin-right: 25px;
 	font-size: 12px;
 	color: #44609B;
+}
+.response {
+	font-size: 13px;
+	padding: 7px 15px;
+	width: 523px;
+	margin: 20px auto 0px auto;
+}
+#mce-error-response {
+	background-color: #FFD8E6;
+	color: #940018;
+	border: 1px solid #FF6A7F;
+}
+#mce-success-response {
+	background-color: #E1FBBC;
+	border: 1px solid #60A607;
 }

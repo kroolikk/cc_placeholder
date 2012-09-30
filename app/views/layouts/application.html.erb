@@ -23,12 +23,7 @@
   }(document, 'script', 'facebook-jssdk'));</script>
 
 
-  <% if flash[:notice] %>
-    <div class="response" id="mce-success-response"><%= flash[:notice] %></div>
-  <% end %>
-  <% if flash[:alert] %>
-    <div class="response" id="mce-error-response"><%= flash[:alert] %></div>
-  <% end %>
+
 
 
   <header>
@@ -48,6 +43,14 @@
         <p class="big-title">Witamy w CollegeCity</p>
         <span class="small-title">Zapisz się do CollegeCity, aby zostać poinformowanym o starcie serwisu!<br>
           Pierwsze osoby, które się zapiszą otrzymają ekskluzywne zaproszenie do beta testów.</span>
+          
+            <% if flash[:notice] %>
+			<div class="response" id="mce-success-response"><%= flash[:notice] %></div>
+		  <% end %>
+		  <% if flash[:alert] %>
+			<div class="response" id="mce-error-response"><%= flash[:alert] %></div>
+		  <% end %>
+  
           <div class="input-area">
             <%= form_tag subscribe_url do %>
               <label class="email-label">Twój e-mail:</label>
