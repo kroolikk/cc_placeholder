@@ -2,9 +2,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>College City</title>
+  <title>CollegeCity</title>
   <meta name="description" content="Zapis do newslettera">
-
+<link rel="icon" type="image/png" href="<% root_path %>/assets/favi.png" />
+<link rel="apple-touch-icon" href="<% root_path %>/assets/apple-favi.png" />
   <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Sans+Caption:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag "main.css" %>
   <%= javascript_include_tag "jquery.js" %>
@@ -55,8 +56,7 @@
     <div class="main-content">
       <div class="newsletter">
         <p class="big-title">Witamy w CollegeCity</p>
-        <span class="small-title">Zapisz się do CollegeCity, aby zostać poinformowanym o starcie serwisu!<br>
-          Pierwsze osoby, które się zapiszą otrzymają ekskluzywne zaproszenie do beta testów.</span>
+        <span class="small-title">Zapisz się do CollegeCity, a jako pierwszy dowiesz się o starcie najlepszego studenckiego portalu w Krakowie! <br>Dodatkowo pierwsze osoby, które zapiszą się do newslettera otrzymają ekskluzywne zaproszenia do beta testów serwisu.<br></span>
           
             <% if flash[:notice] %>
 			<div class="response" id="mce-success-response"><%= flash[:notice] %></div>
@@ -74,7 +74,7 @@
           </div>
 
           <div class="clearspace"></div>
-          <span class="small-title">... a w międzyczasie polub nas na facebooku!<br><br></span>     
+          <span class="small-title">Nie zwlekaj dołącz do nas na Facebooku i bądź na bieżąco ze wszystkim co istotne i ciekawe!<br><br></span>     
           <a href="https://www.facebook.com/CollegeCity" class="fb-link" target="_blank">CollegeCity na facebooku</a>
 
           <div class="fb-like" data-href="https://www.facebook.com/CollegeCity" data-send="false" data-layout="button_count" data-width="150" data-show-faces="false" data-font="tahoma"></div>
