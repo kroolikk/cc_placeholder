@@ -34,6 +34,8 @@ a {
   text-decoration: none;
 }
 body {
+	font-size: 13px;
+	color: #474646;
 	background: #222 url(/assets/bg.png);
   font-family: 'PT Sans Caption', Helvetica, Tahoma, Arial, sans-serif;
 }
@@ -259,6 +261,7 @@ footer li:hover {
 	margin: 30px auto;
 }
 .newsletter .email-here{
+	float: left;
 	width: 435px;
 	color: #777;
 	padding: 5px 5px 6px 5px;
@@ -266,6 +269,17 @@ footer li:hover {
 	height: 22px;
 	line-height: 20px;
 	border: 1px solid #19515D;
+}
+.newsletter-check {
+	margin-top: 10px;
+	font-size: 10px;
+	display: block;
+}
+.newsletter-check  input{
+	float: left;
+}
+.newsletter-check p{
+	margin-left: 10px;
 }
 .newsletter .email-me{
 	margin-left: -6px;

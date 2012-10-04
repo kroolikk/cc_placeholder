@@ -40,12 +40,9 @@
     js = d.createElement(s); js.id = id;
     js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=208374365888731";
     fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-
-
-
-
-
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
+  
   <header>
     <div class="navigation-area">
       <%= link_to "", root_url, :class => "logo-cc" %>
@@ -75,6 +72,13 @@
               <label class="email-label">Twój e-mail:</label>
               <%= text_field_tag :email, '', :class => "email-here", :placeholder => "e-mail" %>
               <%= submit_tag "Zapisz się", :class => "email-me" %>
+              
+              <% if false %>
+              <label class="newsletter-check">
+				<input type="checkbox" name="privacy" />
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet leo metus, a porttitor arcu. Pellentesque congue interdum risus, a dictum orci vestibulum in. Curabitur ut justo erat, non facilisis ligula.</p>
+              </label>
+              <% end %>
             <% end %>
           </div>
 
