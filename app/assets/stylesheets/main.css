@@ -34,7 +34,7 @@ a {
   text-decoration: none;
 }
 body {
-	background: #221d1a;
+	background: #222 url(/assets/bg.png);
   font-family: 'PT Sans Caption', Helvetica, Tahoma, Arial, sans-serif;
 }
 .behind-bg {
@@ -63,9 +63,10 @@ body {
 	background-position: center center;
 }
 header {
+  background: rgba(0, 0, 0, 0.01);
   height: 108px;
   border-bottom: 1px solid #2e261f;
-  box-shadow: 0px 1px 0px #231e1a;
+  box-shadow: 0px 1px 0px #232323;
 }
 .logo-cc {
 	float: left;
